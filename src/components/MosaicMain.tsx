@@ -7,8 +7,6 @@ import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 
 import MosaicInfo from "./MosaicInfo";
 
-export type ViewId = "a" | "b" | "c" | "new";
-
 const MosaicMain = ({ data }: DataProps) => {
   const [selectedCompanies, setSelectedCompanies] = useState<{
     [key: string]: any;
@@ -31,10 +29,10 @@ const MosaicMain = ({ data }: DataProps) => {
   };
 
   return (
-    <Mosaic<ViewId>
+    <Mosaic<string>
       renderTile={(id, path) => {
         return (
-          <MosaicWindow<ViewId>
+          <MosaicWindow<string>
             path={path}
             createNode={() => "new"}
             title={
