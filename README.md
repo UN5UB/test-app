@@ -18,4 +18,14 @@ To build project use: `npm run build`
 2. After creating Image, contentize project use command: `docker run -p 5173:5173 name-project`.
 Or if you have Docker Desktop, in list with images click RUN button.
 
+
+![Images list in Docker Desktop](https://github.com/user-attachments/assets/f194d027-1121-470b-aec2-6a5f48c37527)
+
 You can check your container in Containers list in Docker Desktop.
+
+
+![Container list in Docker Desktop](https://github.com/user-attachments/assets/c216b3c1-1cff-4a65-8242-b9bd56ad94f7)
+
+And run container:
+
+![container run](https://github.com/user-attachments/assets/000a5929-c796-4f14-9263-d46b6e28fd25)
