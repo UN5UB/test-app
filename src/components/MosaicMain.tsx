@@ -39,15 +39,14 @@ const MosaicMain = ({ data }: DataProps) => {
           <MosaicWindow<ViewId>
             path={path}
             createNode={() => "new"}
-            title={
-              <MosaicTitle
-                id={id}
-                data={data}
-                selectedCompanies={selectedCompanies}
-                handleChangeSelect={handleChangeSelect}
-              />
-            }
+            title="Company info"
           >
+            <MosaicTitle
+              id={id}
+              data={data}
+              selectedCompanies={selectedCompanies}
+              handleChangeSelect={handleChangeSelect}
+            />
             <div className="w-[100%] h-[100%] overflow-auto px-4 py-2">
               {selectedCompanies[id] ? (
                 <MosaicInfo company={selectedCompanies[id]} />

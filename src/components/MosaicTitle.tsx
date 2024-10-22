@@ -7,12 +7,11 @@ const MosaicTitle = ({
   handleChangeSelect,
 }: MosaicTitleProps) => {
   return (
-    <div className="flex items-center">
-      <h1 className="font-semibold text-[20px]">Company info</h1>
+    <div className="flex items-center mt-3">
       <select
         value={selectedCompanies[id] ? data.indexOf(selectedCompanies[id]) : ""}
         onChange={(e) => handleChangeSelect(e, id)}
-        className="ml-3 border-stone-400 border-solid border-[1px] rounded-[5px] w-40"
+        className="ml-3 border-black border-solid border-[2px] font-semibold rounded-[5px] w-40"
       >
         <option value="" disabled>
           Select a company
