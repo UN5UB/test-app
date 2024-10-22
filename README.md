@@ -10,4 +10,4 @@ The windows can be resized and positioned using the `react-mosaic-component` lib
 
 To run project in development server use: `npm run dev`
 
-To build project use: `npm run build` and run build use: `npm starn`
+To build project use: `npm run build`
