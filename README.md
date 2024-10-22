@@ -11,3 +11,11 @@ The windows can be resized and positioned using the `react-mosaic-component` lib
 To run project in development server use: `npm run dev`
 
 To build project use: `npm run build`
+
+# Launching Docker
+
+1. Use `docker build -t name-project .` to create new Image in Docker
+2. After creating Image, contentize project use command: `docker run -p 5173:5173 name-project`.
+Or if you have Docker Desktop, in list with images click RUN button.
+
+You can check your container in Containers list in Docker Desktop.
