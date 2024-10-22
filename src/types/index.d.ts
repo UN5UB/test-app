@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 declare interface Company {
   long_description: ReactNode;
   id: string;
@@ -39,6 +41,16 @@ declare interface Company {
   legacy_sector: string;
   legacy_industry_category: string;
   legacy_industry_group: string;
+}
+
+declare interface MosaicTitleProps {
+  id: string;
+  data: CompanyProps[];
+  selectedCompanies: { [key: string]: any };
+  handleChangeSelect: (
+    event: React.ChangeEvent<HTMLSelectElement>,
+    id: string
+  ) => void;
 }
 
 declare interface DataProps {
