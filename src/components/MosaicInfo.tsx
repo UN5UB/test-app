@@ -1,3 +1,5 @@
+import { Company } from "../types";
+
 const MosaicInfo = ({ company }: { company: Company }) => {
   return (
     <div className="font-bold">
